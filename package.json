@@ -4,7 +4,7 @@
   "scripts": {
     "start": "nodemon ./src/server/index.ts",
     "test:unit": "vitest run",
-    "test:e2e": "npx playwright test",
+    "test:e2e": "npx playwright test --ui",
     "test:e2e:gui": "npx playwright test --ui",
     "test": "npm run test:unit && npm run test:e2e",
     "build": "webpack --mode=production --node-env=production",
